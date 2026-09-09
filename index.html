@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าต้อนรับ - งานเกษียณอายุราชการตำรวจ ประจำปี 2569</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { prompt: ['Prompt', 'sans-serif'] } } } }
+    </script>
+    <style>
+        body { font-family: 'Prompt', sans-serif; }
+        .hero-pattern {
+            background-color: #0f172a;
+            background-image: radial-gradient(#1e293b 1px, transparent 1px);
+            background-size: 16px 16px;
+        }
+    </style>
+</head>
+<body class="bg-slate-100 min-h-screen text-slate-800 flex flex-col">
+
+    <!-- Header / Navbar -->
+    <header class="bg-gradient-to-r from-slate-950 via-blue-950 to-slate-950 text-white shadow-md sticky top-0 z-40 border-b border-amber-500/30">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-amber-400/80 bg-slate-900 shadow-md flex items-center justify-center p-0.5 shrink-0">
+                    <img src="https://lh3.googleusercontent.com/d/1a867cc" alt="ตรา บก.น.6" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Royal_Thai_Police_Emblem.svg/512px-Royal_Thai_Police_Emblem.svg.png';">
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold leading-snug tracking-wide text-slate-100">กองบังคับการตำรวจนครบาล 6</h1>
+                    <p class="text-xs text-amber-300/90 font-light">งานเกษียณอายุราชการตำรวจ ประจำปี 2569</p>
+                </div>
+            </div>
+            
+            <div class="flex items-center gap-2 flex-wrap justify-center">
+                <a href="index.html" class="bg-amber-500 text-slate-950 font-semibold text-xs px-3.5 py-1.5 rounded-lg shadow transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-house"></i> หน้าแรก
+                </a>
+                <a href="tables.html" class="bg-slate-800 hover:bg-slate-700 text-amber-300 border border-slate-700 text-xs px-3.5 py-1.5 font-medium rounded-lg transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-chair"></i> ค้นหาโต๊ะ
+                </a>
+                <a href="menu.html" class="bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs px-3.5 py-1.5 rounded-lg shadow transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-utensils"></i> เมนูอาหาร
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 py-6 flex-grow w-full space-y-8">
+
+        <!-- WELCOME BANNER -->
+        <div class="relative rounded-2xl overflow-hidden shadow-xl border border-slate-700/60 text-white hero-pattern">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80" alt="Bangkok Marriott Hotel" class="w-full h-full object-cover opacity-20">
+                <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/95 to-slate-950/80"></div>
+            </div>
+
+            <div class="relative z-10 p-6 sm:p-8 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
+                <div class="space-y-3 max-w-2xl">
+                    <div class="inline-flex items-center gap-2 bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs px-3 py-1 rounded-full font-medium backdrop-blur-md">
+                        <i class="fa-solid fa-calendar-day text-amber-400"></i> วันพฤหัสบดีที่ 17 กันยายน 2569
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-100">
+                        งานเกษียณอายุราชการตำรวจ ประจำปี 2569
+                    </h2>
+                    <p class="text-amber-300 text-sm font-medium italic">
+                        “เกียรติยศจากวันวาน สู่วันเกษียณที่ภาคภูมิ เกษียณอย่างภาคภูมิ ด้วยรักและผูกพัน”
+                    </p>
+                    <p class="text-slate-300 text-xs sm:text-sm font-light leading-relaxed">
+                        ยินดีต้อนรับข้าราชการตำรวจและแขกผู้มีเกียรติทุกท่าน เข้าสู่พิธีมุทิตาจิต ณ โรงแรมแมริออท กรุงเทพฯ เดอะสุรวงศ์ ถนนสุรวงศ์ แขวงสี่พระยา เขตบางรัก กรุงเทพมหานคร
+                    </p>
+                    <div class="pt-1 flex flex-wrap gap-4 text-xs text-slate-300">
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-hotel text-amber-400"></i> ห้องสุรวงศ์ บอลรูม 1 (The Surawongse Ballroom 1+2)</span>
+                    </div>
+                </div>
+
+                <!-- Quick Action Card -->
+                <div class="bg-slate-900/90 backdrop-blur-md p-5 rounded-xl border border-slate-700/80 w-full lg:w-80 shrink-0 space-y-3 shadow-lg">
+                    <div class="text-xs text-slate-300 space-y-2">
+                        <div class="flex items-center gap-2 text-amber-400 font-semibold border-b border-slate-800 pb-2">
+                            <i class="fa-solid fa-clock text-base"></i> เริ่มลงทะเบียน 17.30 น.
+                        </div>
+                        <div class="flex justify-between items-center text-xs">
+                            <span class="text-slate-400">สถานที่:</span>
+                            <span class="font-medium text-slate-200">โรงแรมแมริออท สุรวงศ์</span>
+                        </div>
+                    </div>
+                    <div class="h-px bg-slate-800"></div>
+                    <div class="flex flex-col gap-2">
+                        <a href="tables.html" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-4 py-2 rounded-lg text-xs transition text-center flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-chair"></i> ตรวจสอบโต๊ะที่นั่ง / เช็คอิน
+                        </a>
+                        <a href="menu.html" class="w-full bg-emerald-700 hover:bg-emerald-600 text-white font-medium px-4 py-2 rounded-lg text-xs transition text-center flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-utensils"></i> ดูเมนูอาหารทั้งหมด
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DRESS CODE SECTION -->
+        <div class="bg-gradient-to-r from-amber-500/10 via-amber-500/5 to-transparent border border-amber-500/30 p-4 rounded-xl shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-700 flex items-center justify-center text-lg shrink-0 border border-amber-400/40">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-slate-800 text-sm">การแต่งกาย (Dress Code)</h3>
+                    <p class="text-xs text-slate-600">กรุณาแต่งกายตามข้อกำหนดการจัดงานเกษียณอายุราชการ ประจำปี 2569</p>
+                </div>
+            </div>
+            <div class="flex flex-wrap gap-2 text-xs w-full md:w-auto">
+                <span class="bg-white border border-amber-200 text-slate-700 px-3 py-1.5 rounded-lg shadow-sm font-medium">1. ผู้เกษียณฯ: <strong class="text-amber-800">ชุดสุภาพ</strong></span>
+                <span class="bg-white border border-amber-200 text-slate-700 px-3 py-1.5 rounded-lg shadow-sm font-medium">2. ข้าราชการตำรวจ/ผู้ร่วมพิธี: <strong class="text-amber-800">ชุดสุภาพ</strong></span>
+                <span class="bg-white border border-amber-200 text-slate-700 px-3 py-1.5 rounded-lg shadow-sm font-medium">3. ฝอ.บก.น.6: <strong class="text-blue-900">เสื้อคอปกสีน้ำเงินเข้ม</strong></span>
+            </div>
+        </div>
+
+        <!-- SCHEDULE SECTION -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+            <h3 class="font-bold text-slate-800 text-base flex items-center gap-2 border-b pb-3">
+                <i class="fa-solid fa-clock text-amber-600"></i> กำหนดการ งานเกษียณอายุราชการตำรวจ ประจำปี 2569
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+                <div class="flex gap-3 items-start p-3 rounded-lg bg-amber-50 border border-amber-200">
+                    <span class="bg-amber-600 text-white font-bold px-2 py-1 rounded text-xs shrink-0">17.30 น.</span>
+                    <div>
+                        <p class="font-bold text-amber-900">ผู้เกษียณอายุราชการลงทะเบียน</p>
+                        <p class="text-slate-600">รับเข็มกลัดดอกไม้</p>
+                    </div>
+                </div>
+                <div class="flex gap-3 items-start p-3 rounded-lg bg-slate-50 border border-slate-200">
+                    <span class="bg-slate-800 text-white font-bold px-2 py-1 rounded text-xs shrink-0">18.00 น.</span>
+                    <div>
+                        <p class="font-bold text-slate-800">ดนตรีบรรเลง</p>
+                        <p class="text-slate-600">ผู้เข้าร่วมพิธีพร้อม ณ ห้องสุรวงศ์ บอลรูม 1 โรงแรมแมริออท กรุงเทพฯ</p>
+                    </div>
+                </div>
+                <div class="flex gap-3 items-start p-3 rounded-lg bg-slate-50 border border-slate-200">
+                    <span class="bg-slate-800 text-white font-bold px-2 py-1 rounded text-xs shrink-0">18.30 น.</span>
+                    <div>
+                        <p class="font-bold text-slate-800">การแสดงโชว์</p>
+                    </div>
+                </div>
+                <div class="flex gap-3 items-start p-3 rounded-lg bg-slate-50 border border-slate-200">
+                    <span class="bg-slate-800 text-white font-bold px-2 py-1 rounded text-xs shrink-0">19.00 น.</span>
+                    <div class="space-y-1">
+                        <p class="font-bold text-slate-800">• ผบก.น.6 มอบของที่ระลึกให้แก่ผู้เกษียณฯ</p>
+                        <p class="font-bold text-slate-800">• ผบก.น.6 กล่าวสดุดีผู้เกษียณฯ และถ่ายภาพหมู่</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-slate-950 text-slate-400 text-center py-4 text-xs mt-auto border-t border-slate-800">
+        <p>กองบังคับการตำรวจนครบาล 6 (บก.น.6) © 2569 | Metropolitan Police Division 6</p>
+    </footer>
+</body>
+</html>

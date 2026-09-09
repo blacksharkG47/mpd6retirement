@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เมนูอาหาร - งานเกษียณอายุราชการตำรวจ ประจำปี ๒๕๖๙</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { prompt: ['Prompt', 'sans-serif'] } } } }
+    </script>
+    <style>body { font-family: 'Prompt', sans-serif; }</style>
+</head>
+<body class="bg-slate-100 min-h-screen text-slate-800 flex flex-col">
+
+    <!-- Header / Navbar -->
+    <header class="bg-gradient-to-r from-slate-950 via-blue-950 to-slate-950 text-white shadow-md sticky top-0 z-40 border-b border-amber-500/30">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-amber-400/80 bg-slate-900 shadow-md flex items-center justify-center p-0.5 shrink-0">
+                    <img src="https://lh3.googleusercontent.com/d/1a867cc" alt="ตรา บก.น.6" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Royal_Thai_Police_Emblem.svg/512px-Royal_Thai_Police_Emblem.svg.png';">
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold leading-snug tracking-wide text-slate-100">กองบังคับการตำรวจนครบาล 6</h1>
+                    <p class="text-xs text-amber-300/90 font-light">รายการอาหารจัดเลี้ยง (Buffet & Live Stations)</p>
+                </div>
+            </div>
+            
+            <div class="flex items-center gap-2 flex-wrap justify-center">
+                <a href="index.html" class="bg-slate-800 hover:bg-slate-700 text-amber-300 border border-slate-700 text-xs px-3.5 py-1.5 font-medium rounded-lg transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-house"></i> หน้าแรก
+                </a>
+                <a href="tables.html" class="bg-slate-800 hover:bg-slate-700 text-amber-300 border border-slate-700 text-xs px-3.5 py-1.5 font-medium rounded-lg transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-chair"></i> ค้นหาโต๊ะแขก
+                </a>
+                <a href="menu.html" class="bg-emerald-600 text-white font-semibold text-xs px-3.5 py-1.5 rounded-lg shadow transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-utensils"></i> เมนูอาหาร
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-6 flex-grow w-full space-y-6">
+
+        <div class="border-b border-slate-200 pb-3">
+            <h2 class="font-bold text-slate-800 text-xl flex items-center gap-2">
+                <i class="fa-solid fa-utensils text-emerald-600"></i> รายการอาหารจัดเลี้ยง (Buffet & Live Stations)
+            </h2>
+            <p class="text-xs text-slate-500">ให้บริการโดย โรงแรมแมริออท กรุงเทพฯ เดอะสุรวงศ์</p>
+        </div>
+
+        <!-- Menu Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            
+            <!-- 1. Salad & Thai Street Cart -->
+            <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-md transition">
+                <div class="h-40 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80" alt="สลัดบาร์" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                    <span class="absolute bottom-3 left-3 text-white font-bold text-sm flex items-center gap-1.5">
+                        <i class="fa-solid fa-leaf text-emerald-400"></i> สลัดบาร์ & สตรีทฟู้ดไทย
+                    </span>
+                </div>
+                <div class="p-4 space-y-3 text-xs">
+                    <div class="border-b border-slate-100 pb-2">
+                        <p class="font-semibold text-slate-800">สลัดบาร์ (Salad Bar)</p>
+                        <p class="text-slate-500">ผักสามชนิด, ผักต้ม, ธัญพืช พร้อมน้ำสลัดทาวซันไอส์แลนด์, บัลซามิก และน้ำสลัดงาญี่ปุ่น</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-slate-800">สตรีทฟู้ดไทย (Thai Street Cart)</p>
+                        <ul class="list-disc list-inside text-slate-600 space-y-0.5 mt-1">
+                            <li>ส้มตำไทย / ตำปู / ตำข้าวโพดไข่เค็ม</li>
+                            <li>หมูแดดเดียวและข้าวเหนียว</li>
+                            <li>ลาบไก่</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Soup & Bread Basket -->
+            <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-md transition">
+                <div class="h-40 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=600&q=80" alt="ซุปและขนมปัง" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                    <span class="absolute bottom-3 left-3 text-white font-bold text-sm flex items-center gap-1.5">
+                        <i class="fa-solid fa-bowl-food text-amber-400"></i> ซุป & ขนมปังสด
+                    </span>
+                </div>
+                <div class="p-4 space-y-3 text-xs">
+                    <div class="border-b border-slate-100 pb-2">
+                        <p class="font-semibold text-slate-800">ซุป (Soup)</p>
+                        <ul class="list-disc list-inside text-slate-600 space-y-0.5 mt-1">
+                            <li>ซุปข้าวโพด (Sweet Corn Soup)</li>
+                            <li>ต้มแซ่บกระดูกหมู (Spicy Pork Spareribs Soup)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-slate-800">ตะกร้าขนมปัง (Bread Basket)</p>
+                        <p class="text-slate-600 mt-1">ขนมปังอบสด 3 ชนิด พร้อมเนยสด</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Live Station -->
+            <div class="bg-white rounded-2xl border border-amber-300 ring-1 ring-amber-300/50 shadow-sm overflow-hidden hover:shadow-md transition">
+                <div class="h-40 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&q=80" alt="Live Station" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                    <span class="absolute bottom-3 left-3 text-white font-bold text-sm flex items-center gap-1.5">
+                        <i class="fa-solid fa-fire text-amber-400"></i> Live Station (มุมอาหารปรุงสด)
+                    </span>
+                    <span class="absolute top-3 right-3 bg-amber-500 text-slate-950 text-[10px] font-bold px-2 py-0.5 rounded-full">แนะนำ</span>
+                </div>
+                <div class="p-4 space-y-2 text-xs">
+                    <div class="bg-amber-50 p-2.5 rounded-lg border border-amber-200">
+                        <p class="font-bold text-amber-900 flex items-center gap-1"><i class="fa-solid fa-angle-right"></i> Pasta Station</p>
+                        <p class="text-slate-600 pl-3">พาสต้า 3 ซอส (ซอสมะเขือเทศ, ซอสครีมอัลเฟรโด, ผัดพริกกระเทียม)</p>
+                    </div>
+                    <div class="bg-amber-50 p-2.5 rounded-lg border border-amber-200">
+                        <p class="font-bold text-amber-900 flex items-center gap-1"><i class="fa-solid fa-angle-right"></i> Baked Seabass Station</p>
+                        <p class="text-slate-600 pl-3">เมี่ยงปลากระพงย่างสมุนไพร เสิร์ฟพร้อมขนมจีนและผักสด</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Main Course -->
+            <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-md transition">
+                <div class="h-40 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1516714435131-44d6b64dc6a2?auto=format&fit=crop&w=600&q=80" alt="อาหารจานหลัก" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                    <span class="absolute bottom-3 left-3 text-white font-bold text-sm flex items-center gap-1.5">
+                        <i class="fa-solid fa-pepper-hot text-rose-500"></i> อาหารจานหลัก (Thai Main Course)
+                    </span>
+                </div>
+                <div class="p-4 text-xs space-y-1.5">
+                    <div class="flex items-center gap-2 text-slate-700"><i class="fa-solid fa-check text-emerald-500"></i> ทะเลผัดฉ่า</div>
+                    <div class="flex items-center gap-2 text-slate-700"><i class="fa-solid fa-check text-emerald-500"></i> แกงเผ็ดหมูย่าง</div>
+                    <div class="flex items-center gap-2 text-slate-700"><i class="fa-solid fa-check text-emerald-500"></i> ไก่ผัดพริกไทยดำ</div>
+                    <div class="flex items-center gap-2 text-slate-700"><i class="fa-solid fa-check text-emerald-500"></i> ผัดผักรวมน้ำมันหอย</div>
+                    <div class="flex items-center gap-2 text-slate-700"><i class="fa-solid fa-check text-emerald-500"></i> ข้าวหอมมะลิ</div>
+                </div>
+            </div>
+
+            <!-- 5. Dessert -->
+            <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-md transition">
+                <div class="h-40 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=600&q=80" alt="ของหวาน" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                    <span class="absolute bottom-3 left-3 text-white font-bold text-sm flex items-center gap-1.5">
+                        <i class="fa-solid fa-cake-candles text-pink-400"></i> ของหวาน & เบเกอรี่
+                    </span>
+                </div>
+                <div class="p-4 text-xs space-y-1.5">
+                    <div class="flex items-center gap-2 text-slate-700"><i class="fa-solid fa-cookie text-amber-500"></i> กล้วยบวชชี</div>
+                    <div class="flex items-center gap-2 text-slate-700"><i class="fa-solid fa-cookie text-amber-500"></i> เค้กช็อกโกแลต</div>
+                    <div class="flex items-center gap-2 text-slate-700"><i class="fa-solid fa-cookie text-amber-500"></i> เค้กเผือก</div>
+                    <div class="flex items-center gap-2 text-slate-700"><i class="fa-solid fa-cookie text-amber-500"></i> เค้กสตอเบอร์รี่สไตล์ญี่ปุ่น</div>
+                    <div class="flex items-center gap-2 text-slate-700"><i class="fa-solid fa-apple-whole text-red-500"></i> ผลไม้ตามฤดูกาล</div>
+                </div>
+            </div>
+
+            <!-- 6. Hotel Info Card -->
+            <div class="bg-slate-900 text-white rounded-2xl p-5 border border-slate-800 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-2 text-amber-400 text-xs font-bold mb-2">
+                        <i class="fa-solid fa-hotel"></i> Marriott Catering Service
+                    </div>
+                    <h4 class="font-bold text-base text-slate-100">BANGKOK MARRIOTT HOTEL THE SURAWONGSE</h4>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                        262 Surawong Road, Siphraya, Bangrak, Bangkok 10500<br>
+                        Tel: 02 088 5666
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-slate-800 flex justify-between items-center text-[10px] text-slate-400">
+                    <span>บริการจัดเลี้ยงมาตรฐานระดับพรีเมียม</span>
+                    <i class="fa-solid fa-utensils text-amber-400 text-base"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="bg-slate-950 text-slate-400 text-center py-4 text-xs mt-auto border-t border-slate-800">
+        <p>กองบังคับการตำรวจนครบาล 6 (บก.น.6) © 2569 | Metropolitan Police Division 6</p>
+    </footer>
+</body>
+</html>
